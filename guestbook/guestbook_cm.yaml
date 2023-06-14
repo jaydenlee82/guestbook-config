@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: guestbook-cm
 data:
-  MYSQL_IP: "192.168.56.150"
-  MYSQL_PORT: "3306"
-  MYSQL_DATABASE: "guestbook"
-  MYSQL_USER: "root"
-  MYSQL_PASSWORD: "edu"
+  MYSQL_DATABASE: guestbook
+  MYSQL_IP: mysql.test.svc.cluster.local
+  MYSQL_PASSWORD: password
+  MYSQL_PORT: '3306'
+  MYSQL_USER: userId
