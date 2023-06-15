@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app.kubernetes.io/instance: guestbook
+  name: guestbook-route
+  namespace: test
+  resourceVersion: '62756249'
+  uid: 0fe581a9-9f94-4a60-bf0d-c18e004df831
+spec:
+  host: guestbook.apps.con4.mtp.local
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: guestbook-http
+    weight: 100
+  wildcardPolicy: None
