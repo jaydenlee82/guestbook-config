@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: default
+    namespace: test
     server: 'https://kubernetes.default.svc'
   source:
     path: guestbook
