@@ -14,7 +14,7 @@ spec:
         app: guestbook
     spec:
       containers:
-      - image: jaejinlee/cicd_guestbook:20230616094600_66
+      - image: jaejinlee/cicd_guestbook:20230616095716_67
         name: sb-guestbook
         envFrom:
         - configMapRef:
